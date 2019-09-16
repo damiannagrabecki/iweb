@@ -6,4 +6,4 @@
 
 use \Magento\Framework\Component\ComponentRegistrar;
 
-ComponentRegistrar::register(ComponentRegistrar::THEME, 'frontend/iWeb/theme', __DIR__);
+ComponentRegistrar::register(ComponentRegistrar::THEME, 'frontend/iwebtest/theme', __DIR__);

@@ -50,5 +50,14 @@ module.exports = {
             'css/styles'
         ],
         dsl: 'less'
-    }
+    },
+    iweb: {
+        area: 'frontend',
+        name: 'iwebtest/theme',
+        locale: 'en_US',
+        files: [
+            'css/style'
+        ],
+        dsl: 'less'
+    },
 };
