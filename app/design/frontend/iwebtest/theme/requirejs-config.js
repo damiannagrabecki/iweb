@@ -1,5 +1,6 @@
 var config = {
     deps: [
-        "js/modal"
+        "js/modal",
+        "js/review-scroll"
     ]
 };

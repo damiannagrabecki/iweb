@@ -7,7 +7,7 @@ require(
         $,
         modal
     ) {
-        var options = {
+        const options = {
             type: 'popup',
             responsive: true,
             title: 'iWeb Modal on e-mail click',
@@ -24,7 +24,7 @@ require(
         // Create HTML Modal
         $('body').prepend('<div class="iweb-modal">This is custom modal after clicking on e-mailto on product view page.</div>');
 
-        var popup = modal(options, $('.iweb-modal'));
+        const popup = modal(options, $('.iweb-modal'));
 
         // Open Popup on email link click
         $('.action.mailto.friend').on('click',function () {
