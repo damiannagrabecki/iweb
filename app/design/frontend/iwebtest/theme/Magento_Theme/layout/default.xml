@@ -9,11 +9,15 @@
     <body>
         <!-- Add a new CMS block to the footer positioned before all others -->
         <referenceContainer name="footer">
-            <block class="Magento\Cms\Block\Block" name="iweb_footer_item" before="-">
-                <arguments>
-                    <argument name="block_id" xsi:type="string">iweb_footer_item</argument>
-                </arguments>
-            </block>
+
+            <!-- Demonstrate use of arguments to configure a block -->
+            <container name="iweb.footer.wrapper" htmlClass="iweb-wrapper" htmlTag="div" before="-">
+                <block class="Magento\Cms\Block\Block" name="iweb_footer_item" before="-">
+                    <arguments>
+                        <argument name="block_id" xsi:type="string">iweb_footer_item</argument>
+                    </arguments>
+                </block>
+            </container>
         </referenceContainer>
 
         <!--Hide default welcome message-->
