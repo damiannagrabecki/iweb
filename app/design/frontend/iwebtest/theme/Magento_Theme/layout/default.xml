@@ -7,6 +7,14 @@
 -->
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
+        <!-- Change the store logo to the iWeb logo, set the width to 200px -->
+        <referenceBlock name="logo">
+            <arguments>
+                <argument name="logo_file" xsi:type="string">images/logo-with-text.svg</argument>
+                <argument name="logo_img_width" xsi:type="number">200</argument>
+            </arguments>
+        </referenceBlock>
+
         <!-- Add a new CMS block to the footer positioned before all others -->
         <referenceContainer name="footer">
 
